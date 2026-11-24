@@ -3,6 +3,9 @@
 [browser]
 gatherUsageStats = false
 
+[server]
+enableStaticServing = true
+
 [client]
 toolbarMode = "minimal"
 

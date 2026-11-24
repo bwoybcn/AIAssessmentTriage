@@ -86,4 +86,13 @@ Medium's design system is a "Masterclass in Reading." It is an elegant, editoria
 
 **Not used:** drop caps, the clap button and progressive image loading. This is a form, not an article feed. The red/amber/green rating symbols remain, because they're part of the agreed output and are always paired with words.
 
+**Product components** (in `gac/style.py`):
+
+- **Brand bar:** green check-mark logo (`static/logo.png`), app name in sans-serif, "Prototype" badge.
+- **Wizard:** five steps (Assessment, Outcomes, GenAI tier, Brief, Review) with a segmented progress bar; answers are kept when moving back and forth.
+- **Rating badges:** solid pills with white text and a shape as well as a colour (✕ red `#b3261e`, ! amber `#8a5a00`, ✓ green `#15693b`), all at least 5.9:1. They work on light and dark backgrounds.
+- **Results:** an overall summary card, a 2×2 grid of check cards (one column on phones), and tabs for recommendations, findings, AI review and answers.
+- **Selected tab:** label in the normal text colour, with the green underline, because green text on black fails contrast.
+- **Focus:** a 3px green outline on everything focusable.
+
 **Word report:** unchanged (Arial, 11pt), because it's a working document staff will edit.
