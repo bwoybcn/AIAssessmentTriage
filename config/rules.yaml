@@ -1,0 +1,182 @@
+# GenAI Assessment Check: rules
+#
+# Every rule below is a PLACEHOLDER written by Claude to get the app working.
+# Replace them with your own rules. The format is explained in docs/RULES.md.
+#
+# How ratings work:
+#   - Each check (secure, tier, valid, reliable) starts at green.
+#   - Every rule whose `when` conditions are ALL true "fires".
+#   - A check's rating is the worst rating of the rules that fired for it.
+#   - The overall rating is the worst of the four checks.
+
+version: "0.1-placeholder"
+
+rules:
+
+  # ---------------------------------------------------------------- tier --
+
+  - id: TIER-01
+    placeholder: true
+    check: tier
+    when:
+      intended_tier: 1
+      conditions: [take_home, timed_online_unsupervised]
+    rating: red
+    why: >
+      Tier 1 prohibits all AI use and must be enforced through supervision or
+      controlled conditions. This assessment is completed without supervision,
+      so Tier 1 cannot be enforced.
+    policy: "4.7, Table 1 (Tier 1)"
+    ofs: >
+      Students can often use AI to complete unsupervised assessments to a high
+      standard without showing the intended knowledge (provisional).
+    suggest_tier: 2
+    interventions: [INT-SUPERVISE, INT-RETIER]
+
+  - id: TIER-02
+    placeholder: true
+    check: tier
+    when:
+      intended_tier: [3, 4]
+      has_evidence_requirement: false
+    rating: red
+    why: >
+      Tiers 3 and 4 require the assessment guidance to say what evidence of AI
+      use students must provide. None has been specified.
+    policy: "4.7, Table 1 (Tiers 3 and 4)"
+    ofs: >
+      Students are often unclear about what AI use is permitted in assessed
+      work (provisional).
+    interventions: [INT-EVIDENCE]
+
+  - id: TIER-03
+    placeholder: true
+    check: tier
+    when:
+      tier_stated_in_canvas: ["no", not_sure]   # quote "yes"/"no", or YAML reads them as true/false
+    rating: amber
+    why: >
+      Canvas must state the tier and any permissions or restrictions for each
+      assessment. Without it, students may assume the default (Tier 2, or
+      Tier 1 for invigilated exams).
+    policy: "4.3, 4.4"
+    ofs: >
+      Students are often unclear about what AI use is permitted in assessed
+      work (provisional).
+    interventions: [INT-CANVAS]
+
+  - id: TIER-04
+    placeholder: true
+    check: tier
+    when:
+      psrb: true
+      intended_tier: [3, 4]
+    rating: amber
+    why: >
+      This assessment has PSRB or fitness-to-practise constraints. Check that
+      Tier 3 or 4 use is consistent with them.
+    policy: "2.3, 2.4"
+    ofs: ""
+    interventions: [INT-PSRB]
+
+  # -------------------------------------------------------------- secure --
+
+  - id: SEC-01
+    placeholder: true
+    check: secure
+    when:
+      intended_tier: 1
+      conditions: [take_home, timed_online_unsupervised]
+    rating: red
+    why: >
+      An unsupervised task cannot stop students using AI, so a Tier 1 ban is
+      not enforceable.
+    policy: "4.7, Table 1 (Tier 1)"
+    ofs: >
+      Secure assessment methods are often the most reliable way to show a
+      student's own knowledge (provisional).
+    interventions: [INT-SUPERVISE, INT-ORAL]
+
+  - id: SEC-02
+    placeholder: true
+    check: secure
+    when:
+      intended_tier: 2
+      conditions: [take_home, timed_online_unsupervised]
+      assessment_type: [essay, report, reflective, short_answer_quiz]
+    rating: amber
+    why: >
+      Written work done without supervision can be produced largely by AI,
+      beyond the limited use Tier 2 allows, and this is hard to detect.
+    policy: "4.7, Table 1 (Tier 2); 5.1"
+    ofs: >
+      Students can often use AI to complete unsupervised assessments to a high
+      standard without showing the intended knowledge (provisional).
+    interventions: [INT-ORAL, INT-PROCESS, INT-RETIER]
+
+  # --------------------------------------------------------------- valid --
+
+  - id: VAL-01
+    placeholder: true
+    check: valid
+    when:
+      weighting: {min: 50}
+      conditions: [take_home, timed_online_unsupervised]
+      intended_tier: [1, 2]
+    rating: amber
+    why: >
+      This unsupervised component carries at least half the module mark. If AI
+      use goes beyond the tier, the mark may not reflect whether the student
+      met the learning outcomes.
+    policy: "4.6"
+    ofs: >
+      Innovative assessments that reflect real-world AI use need careful
+      design to protect validity and reliability (provisional).
+    interventions: [INT-ORAL, INT-PROCESS]
+
+  # ------------------------------------------------------------ reliable --
+
+  - id: REL-01
+    placeholder: true
+    check: reliable
+    when:
+      has_rubric: false
+    rating: amber
+    why: >
+      No marking criteria were provided, so the check cannot tell whether
+      markers would grade consistently given AI involvement.
+    policy: "4.6"
+    ofs: ""
+    interventions: [INT-RUBRIC]
+
+  - id: REL-02
+    placeholder: true
+    check: reliable
+    when:
+      intended_tier: [3, 4]
+      has_rubric: true
+    rating: amber
+    why: >
+      At Tiers 3 and 4, the marking criteria need to say how the student's own
+      contribution and their critical use of AI are credited. Check the AI
+      notes below for whether this rubric does.
+    policy: "4.7, Table 1 (Tiers 3 and 4)"
+    ofs: >
+      Innovative assessments that reflect real-world AI use need careful
+      design to protect validity and reliability (provisional).
+    interventions: [INT-RUBRIC]
+
+  - id: REL-03
+    placeholder: true
+    check: reliable
+    when:
+      group: true
+      conditions: [take_home, timed_online_unsupervised]
+    rating: amber
+    why: >
+      In unsupervised group work it is hard to tell each student's
+      contribution from AI-generated work, which makes individual marks less
+      consistent.
+    policy: "5.1"
+    ofs: ""
+    interventions: [INT-PROCESS]

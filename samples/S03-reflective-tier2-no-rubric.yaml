@@ -1,0 +1,25 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: amber
+  tier: amber
+  valid: amber
+  reliable: amber
+expected_notes: Reflective writing is easy to generate; tier not in Canvas; no rubric supplied.
+input:
+  title: "EDUC310 Reflective account of placement"
+  assessment_type: reflective
+  conditions: take_home
+  level: 6
+  weighting: 40
+  group: false
+  intended_tier: 2
+  tier_stated_in_canvas: "no"
+  evidence_required: []
+  psrb: false
+  learning_outcomes: |
+    LO1 Critically reflect on own professional practice using an established reflective model.
+    LO2 Identify personal development goals informed by theory.
+  brief: |
+    Write a 2,000-word reflective account of a critical incident from your placement,
+    using Gibbs' reflective cycle. You may use AI to check grammar.
+  rubric: ""

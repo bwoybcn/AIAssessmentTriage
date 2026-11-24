@@ -1,0 +1,70 @@
+# GenAI Assessment Check: recommendation library
+#
+# Every item below is a PLACEHOLDER written by Claude. Replace with your own.
+# Rules trigger these by id. When the AI step runs, Claude tailors the wording
+# to the specific assessment; otherwise staff see the `text` below as written.
+# Format: docs/RULES.md
+
+interventions:
+
+  - id: INT-SUPERVISE
+    placeholder: true
+    title: Move to supervised or controlled conditions
+    text: >
+      If the learning outcomes need to be shown without AI, run all or part of
+      the assessment under supervision, for example an in-class or invigilated
+      component.
+
+  - id: INT-RETIER
+    placeholder: true
+    title: Reconsider the tier
+    text: >
+      Choose a tier that can be enforced under these conditions. For
+      unsupervised work, consider Tier 2, or Tier 3 with a required record of
+      AI use.
+
+  - id: INT-ORAL
+    placeholder: true
+    title: Add a short oral check
+    text: >
+      Add a short viva or presentation in which students explain and defend
+      their work. This checks that the work reflects their own understanding.
+
+  - id: INT-PROCESS
+    placeholder: true
+    title: Assess the process, not just the product
+    text: >
+      Ask for drafts, plans or an edit history, and give credit for how the
+      work developed. This makes undeclared AI use harder and shows individual
+      contribution.
+
+  - id: INT-EVIDENCE
+    placeholder: true
+    title: State the evidence of AI use required
+    text: >
+      Say in the brief what evidence students must submit, for example a
+      summary of how AI was used, key prompts and outputs, and a critical
+      evaluation of the AI's contribution.
+
+  - id: INT-CANVAS
+    placeholder: true
+    title: State the tier in Canvas
+    text: >
+      Add the tier and any specific permissions or restrictions to the
+      assessment's Canvas page, so students know what is permitted,
+      restricted or prohibited.
+
+  - id: INT-RUBRIC
+    placeholder: true
+    title: Align the marking criteria with the tier
+    text: >
+      Make sure the criteria reward the student's own contribution and say how
+      declared AI use is treated in marking, so different markers grade
+      consistently.
+
+  - id: INT-PSRB
+    placeholder: true
+    title: Check against PSRB requirements
+    text: >
+      Confirm with the programme team that the permitted AI use is consistent
+      with PSRB, fitness-to-practise and patient-safety requirements.

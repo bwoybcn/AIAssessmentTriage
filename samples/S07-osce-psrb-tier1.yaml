@@ -1,0 +1,27 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: green
+  tier: green
+  valid: green
+  reliable: green
+expected_notes: Supervised clinical skills assessment at Tier 1 with PSRB constraints.
+input:
+  title: "NURS150 Clinical skills OSCE"
+  assessment_type: practical
+  conditions: supervised_in_class
+  level: 4
+  weighting: 100
+  group: false
+  intended_tier: 1
+  tier_stated_in_canvas: "yes"
+  evidence_required: []
+  psrb: true
+  psrb_details: |
+    NMC proficiency standards; must demonstrate safe practice unaided.
+  learning_outcomes: |
+    LO1 Demonstrate safe, person-centred clinical skills in a simulated setting.
+  brief: |
+    Five 10-minute OSCE stations observed by trained examiners using standardised patients.
+  rubric: |
+    Standardised checklist per station plus global rating. Examiners are calibrated before each session.
+    Any unsafe practice results in a fail for that station.

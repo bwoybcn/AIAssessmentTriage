@@ -1,0 +1,29 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: green
+  tier: amber
+  valid: green
+  reliable: green
+expected_notes: Live presentation is secure; tier not confirmed in Canvas and PSRB fit needs checking.
+input:
+  title: "PHAR340 Patient-case presentation"
+  assessment_type: presentation
+  conditions: live_oral
+  level: 6
+  weighting: 30
+  group: false
+  intended_tier: 3
+  tier_stated_in_canvas: not_sure
+  evidence_required: [interaction_log, critical_evaluation]
+  psrb: true
+  psrb_details: |
+    GPhC standards for pharmacist education.
+  learning_outcomes: |
+    LO1 Develop and justify an evidence-based pharmaceutical care plan.
+    LO2 Communicate clinical reasoning clearly and respond to questioning.
+  brief: |
+    Prepare a 10-minute presentation of a care plan for a provided patient case, followed by
+    10 minutes of questions. You may use AI to explore treatment options; submit a summary
+    of how you used it and a critique of anything it got wrong.
+  rubric: |
+    Clinical reasoning (40%), Response to questions (30%), Critique of AI use (15%), Communication (15%).

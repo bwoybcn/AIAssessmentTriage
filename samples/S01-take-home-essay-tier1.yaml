@@ -1,0 +1,29 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: red
+  tier: red
+  valid: amber
+  reliable: green
+expected_notes: Tier 1 cannot be enforced on unsupervised coursework.
+input:
+  title: "HIST204 Essay: Causes of the 1848 revolutions"
+  assessment_type: essay
+  conditions: take_home
+  level: 5
+  weighting: 60
+  group: false
+  intended_tier: 1
+  tier_stated_in_canvas: "yes"
+  evidence_required: []
+  psrb: false
+  learning_outcomes: |
+    LO1 Evaluate competing historiographical explanations of the 1848 revolutions.
+    LO2 Construct a sustained, evidence-based argument using primary and secondary sources.
+  brief: |
+    Write a 3,000-word essay answering: "Was 1848 a revolution of ideas or of hunger?"
+    You must not use generative AI tools at any stage. Submit via Turnitin within four weeks.
+  rubric: |
+    Argument (40%): clear thesis sustained throughout.
+    Use of evidence (30%): range and critical handling of primary and secondary sources.
+    Historiography (20%): engagement with competing interpretations.
+    Presentation (10%): structure, referencing, style.

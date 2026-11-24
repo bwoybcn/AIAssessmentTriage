@@ -1,0 +1,31 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: green
+  tier: green
+  valid: green
+  reliable: green
+expected_notes: Tier 4 with full evidence requirements and criteria that credit critical use.
+input:
+  title: "COMP330 AI-assisted software design portfolio"
+  assessment_type: portfolio
+  conditions: take_home
+  level: 6
+  weighting: 50
+  group: false
+  intended_tier: 4
+  tier_stated_in_canvas: "yes"
+  evidence_required: [prompts_outputs, critical_evaluation, reflection, drafts_edits]
+  psrb: false
+  learning_outcomes: |
+    LO1 Use generative AI tools effectively and responsibly in software design.
+    LO2 Critically evaluate AI-generated designs and code for correctness, security and bias.
+    LO3 Justify design decisions, showing where human judgement added value.
+  brief: |
+    Using an approved AI coding assistant, design and build a small booking system.
+    Submit your full prompt log, each AI output you used, your edits, and a 1,500-word
+    critical evaluation of where the AI helped, where it was wrong, and how you corrected it.
+  rubric: |
+    Critical evaluation of AI contributions (40%): identifies errors, security issues and bias with evidence.
+    Design justification (30%): shows where and why human judgement changed AI output.
+    Working system (20%): meets the specification.
+    Process evidence (10%): complete, honest log. Undeclared AI use is treated under the academic integrity policy.

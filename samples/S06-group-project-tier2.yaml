@@ -1,0 +1,26 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: amber
+  tier: green
+  valid: amber
+  reliable: amber
+expected_notes: Unsupervised group work makes individual contribution and AI use hard to see.
+input:
+  title: "BUSI220 Group consultancy report"
+  assessment_type: report
+  conditions: take_home
+  level: 5
+  weighting: 50
+  group: true
+  intended_tier: 2
+  tier_stated_in_canvas: "yes"
+  evidence_required: []
+  psrb: false
+  learning_outcomes: |
+    LO1 Work effectively in a team to diagnose an organisational problem.
+    LO2 Produce a professional consultancy report with justified recommendations.
+  brief: |
+    In groups of four, write a 5,000-word consultancy report for a local charity.
+    AI may be used for planning and proofreading only. All members receive the same mark.
+  rubric: |
+    Diagnosis (40%), Recommendations (40%), Professional presentation (20%).

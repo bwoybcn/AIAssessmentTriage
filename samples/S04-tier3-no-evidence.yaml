@@ -1,0 +1,28 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: amber
+  tier: red
+  valid: amber
+  reliable: amber
+expected_notes: Tier 3 with no evidence requirement, and a rubric that ignores AI use.
+input:
+  title: "MKTG250 Market analysis report"
+  assessment_type: report
+  conditions: take_home
+  level: 5
+  weighting: 50
+  group: false
+  intended_tier: 3
+  tier_stated_in_canvas: "yes"
+  evidence_required: []
+  psrb: false
+  learning_outcomes: |
+    LO1 Analyse a market using appropriate frameworks (PESTLE, Porter's Five Forces).
+    LO2 Make evidence-based strategic recommendations.
+  brief: |
+    Produce a 2,500-word market analysis of the UK plant-based food sector.
+    You are encouraged to use generative AI to help with research and drafting.
+  rubric: |
+    Analysis (50%): accurate, well-applied frameworks.
+    Recommendations (30%): justified and realistic.
+    Presentation (20%): professional report format.

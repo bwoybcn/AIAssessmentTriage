@@ -1,0 +1,26 @@
+# MADE-UP EXAMPLE. Expected ratings are Claude's draft judgement: owner to confirm.
+expected:
+  secure: green
+  tier: green
+  valid: green
+  reliable: green
+expected_notes: Invigilated exam at Tier 1 with clear criteria.
+input:
+  title: "CHEM101 End-of-year exam"
+  assessment_type: exam
+  conditions: invigilated
+  level: 4
+  weighting: 70
+  group: false
+  intended_tier: 1
+  tier_stated_in_canvas: "yes"
+  evidence_required: []
+  psrb: false
+  learning_outcomes: |
+    LO1 Apply principles of chemical bonding to predict molecular structure.
+    LO2 Solve quantitative problems in thermodynamics and kinetics.
+  brief: |
+    Two-hour invigilated written exam. Answer three of five questions. Calculators permitted.
+  rubric: |
+    Model answers and a points-based marking scheme are provided to all markers.
+    Partial credit for correct method with arithmetic errors.
