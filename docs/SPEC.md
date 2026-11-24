@@ -1,4 +1,4 @@
-# GenAI Assessment Check — agreed design
+# GenAI Assessment Check: agreed product spec
 
 Agreed 24 November 2026 after a structured design interview. This is the record of what the prototype is and is not. Change it when a decision changes.
 

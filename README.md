@@ -6,7 +6,7 @@ A prototype web app that helps module leaders check one assessment component aga
 
 It rates whether the assessment is **secure**, **tier-appropriate**, **valid** and **reliable** (red / amber / green), suggests changes, and produces a downloadable Word report and JSON record. Ratings come from editable rules; Claude reads the brief and rubric to raise further points and tailor the recommendations, but never changes a rating.
 
-**Status: prototype.** The rules are placeholders. Use only made-up example assessments, or real ones with the module leader's permission and identifiers removed. See [docs/DESIGN.md](docs/DESIGN.md).
+**Status: prototype.** The rules are placeholders. Use only made-up example assessments, or real ones with the module leader's permission and identifiers removed. See [docs/SPEC.md](docs/SPEC.md).
 
 ## Files
 
@@ -16,7 +16,8 @@ It rates whether the assessment is **secure**, **tier-appropriate**, **valid** a
 | `config/rules.yaml` | When to rate red / amber / green (**you edit this**) |
 | `config/interventions.yaml` | Library of recommended changes (**you edit this**) |
 | `docs/RULES.md` | How to write rules |
-| `docs/DESIGN.md` | The agreed design |
+| `docs/SPEC.md` | The agreed product design (what the app does) |
+| `DESIGN.md` | The visual design system (how it looks) |
 | `samples/` | Test assessments with expected ratings |
 | `scripts/check_samples.py` | Compares rule ratings with expected ratings |
 | `gac/` | The engine: rules, Claude step, reports |

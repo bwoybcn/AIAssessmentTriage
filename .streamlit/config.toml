@@ -1,5 +1,36 @@
+# Visual theme: see DESIGN.md (Medium design system, with accessibility changes).
+
 [browser]
 gatherUsageStats = false
 
 [client]
 toolbarMode = "minimal"
+
+[theme]
+font = "Charter, Georgia, serif"
+headingFont = "Noe Display, Charter, Georgia, serif"
+headingFontWeights = [700, 700, 700, 700, 700, 700]
+baseRadius = "4px"
+buttonRadius = "full"
+showWidgetBorder = true
+linkUnderline = true
+
+[theme.light]
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#000000"
+primaryColor = "#15693b"
+linkColor = "#15693b"
+borderColor = "#757575"           # spec #e6e6e6; darkened for 3:1 field boundaries
+blueBackgroundColor = "#f2f2f2"   # neutral info boxes (monochrome restraint)
+blueTextColor = "#000000"
+
+[theme.dark]
+backgroundColor = "#000000"
+secondaryBackgroundColor = "#000000"
+textColor = "#ffffff"
+primaryColor = "#15693b"
+linkColor = "#4caf7a"             # spec #15693b is 3.1:1 on black; needs 4.5:1
+borderColor = "#757575"           # spec #292929; darkened for 3:1 field boundaries
+blueBackgroundColor = "#1a1a1a"
+blueTextColor = "#ffffff"

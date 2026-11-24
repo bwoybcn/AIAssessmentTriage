@@ -28,8 +28,10 @@ from gac.models import (
 )
 from gac.report import to_docx, to_json
 from gac.rules import RulesError, load
+from gac.style import CSS
 
 st.set_page_config(page_title=APP_NAME, layout="centered")
+st.html(CSS)
 
 SYMBOL = {"green": "🟢", "amber": "🟠", "red": "🔴"}
 
